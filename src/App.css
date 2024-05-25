@@ -1,38 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.scope-one-regular {
+	font-family: "Scope One", serif;
+	font-weight: 400;
+	font-style: normal;
+  }
+
 .App {
-  text-align: center;
+	text-align: center;
+	font-family: "Scope One", serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-fluid {
+	margin: 0;
+	padding: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.btn:focus, .btn:active {
+    outline: none;
+    box-shadow: none;
+}
+.card-img-top {
+	/* Ancho fijo */
+	 /* Altura fija */
+	object-fit: cover; /* Ajusta la imagen al tamaño del contenedor sin distorsionarla */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  hr {
+	padding: 0;
+	margin: 0;
   }
-  to {
-    transform: rotate(360deg);
+  .hrppal {
+	height: 2px; /* Cambia la altura del hr */
+    border-width: 0; /* Elimina el borde del hr */
+    background-color: #0095da; /* Cambia el color del hr */
   }
+  .imgppal {
+	height: 100px;
+  }
+  @media (max-width: 992px) {
+	.imgppal {
+		height: 50px;
+	}
+
 }
